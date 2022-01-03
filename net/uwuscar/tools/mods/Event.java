@@ -8,4 +8,7 @@ public class Event {
     public @interface register {
         String name();
     }
+
+    public @interface onRanEvent {
+    }
 }

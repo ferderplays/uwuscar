@@ -8,10 +8,12 @@ public class Movement {
      * @author ferderplays
      * @description this is registering Movement of a player
      */
+    int key;
+
     @Event.register(name = "Move")
     public void movement() {
         // the keyboard does not work, cause i don't have this as a forge mod
-        switch (Keyboard.pressed()) {
+        switch (code == Keyboard.getkey()) {
             // if u pressed W, the player will go forward
             case KEY_W:
                 mc.player.move(Direction.FORWARD);
