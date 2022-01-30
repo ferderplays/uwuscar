@@ -11,4 +11,13 @@ public class Event {
 
     public @interface onRanEvent {
     }
+
+    public @interface FollowEvent {
+    }
+
+    public @interface onEnableEvent {
+    }
+
+    public @interface onDisableEvent {
+    }
 }
